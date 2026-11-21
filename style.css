@@ -148,10 +148,6 @@ html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{line-height:1.35;letter-spaci
 html[lang=ar] .sub,html[lang=ar] .rev p{line-height:1.8}
 a[href^=tel]{direction:ltr;unicode-bidi:isolate;display:inline-block}
 .stats b{direction:ltr}
-.about-gallery{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:.7rem;aspect-ratio:4/5}
-.about-gallery .pic{border-radius:24px}
-.about-gallery .pic:first-child{grid-row:span 2;border-radius:28px}
-.about-gallery .pic:hover::before{transform:scale(1.05)}
 .rev-body{flex:1;min-width:0;padding:1.7rem}
 .rev-pic{flex:0 0 38%;border-radius:0}
 html[dir=rtl] .rev{flex-direction:row-reverse}
