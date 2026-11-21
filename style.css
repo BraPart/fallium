@@ -152,3 +152,19 @@ a[href^=tel]{direction:ltr;unicode-bidi:isolate;display:inline-block}
 .rev-pic{flex:0 0 38%;border-radius:0}
 html[dir=rtl] .rev{flex-direction:row-reverse}
 @media(max-width:480px){.rev-pic{flex-basis:34%}.rev-body{padding:1.3rem}}
+
+/* brand always in Fraunces, even in Arabic */
+.logo{font-family:'Fraunces',Georgia,serif;white-space:nowrap}
+.ctl,.burger{flex:0 0 auto}
+/* phones: keep logo + 3 round buttons on one row */
+@media(max-width:979px){
+ .nav{gap:.4rem;padding:.45rem .5rem;padding-inline-start:.95rem}
+ .logo{font-size:1.1rem;letter-spacing:.08em}
+ .logo span{font-size:.9rem;margin-inline-start:.4rem}
+ .ctl,.burger{width:38px;height:38px}
+}
+@media(max-width:360px){.logo{font-size:.98rem;letter-spacing:.05em}.logo span{display:none}}
+
+/* the Order Now button was showing on phones (.btn overrode display:none) and pushing the buttons off-screen */
+.nav .nav-cta{display:none}
+@media(min-width:980px){.nav .nav-cta{display:inline-block}}
